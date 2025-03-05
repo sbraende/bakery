@@ -8,6 +8,12 @@
   --color-medium-gray: #dddddd;
   --color-dark-gray: #6b6b6b;
 
+  --background-color: #fff8e7;
+  --secondary-background-color: #f6d776;
+  --brand-beige: #f3dcbe;
+  --button-color: #6d4620;
+  --highlights-color: #a8d5ba;
+
   /* SPACING */
   --spacing-x-small: 0.25rem;
   --spacing-small: 0.5rem;
