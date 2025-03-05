@@ -52,3 +52,28 @@ body {
   width: 34px;
   height: 34px;
 }
+
+footer {
+  background-color: #f6d776;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  display: flex;
+  padding: 2.5rem 6.25rem;
+  width: 100%;
+  padding: 1.875rem 1.125rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-div {
+  padding: 2.5rem 6.25rem;
+}
+.footer-heading {
+  font-family: “Geist Mono”;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer-text {
+  font-family: “Geist Mono”;
+  font-size: 0.875rem;
+}

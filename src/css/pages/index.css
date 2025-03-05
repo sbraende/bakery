@@ -1,0 +1,33 @@
+.hero-section {
+  max-height: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Hindrer gjentakelse av bildet */
+  height: 37.5rem;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5625rem;
+}
+
+.hero-image {
+  max-height: 30rem;
+  width: 70rem;
+}
+
+.hero-text {
+  width: 403px;
+  height: 86px;
+  background-color: rgba(255, 248, 231, 0.8);
+  color: #6d4620;
+  font-family: “Geist Mono”;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
