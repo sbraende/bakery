@@ -8,7 +8,7 @@
     <script type="module" src="../js/pages/contactPage.js"></script>
     <title>Eiv-Reza Bakery 🧁 - Contact Page</title>
   </head>
-  <body>
+  <body class="contact-main">
     <header class="header">
       <div class="logo-container">
         <img src="/assets/icons/logo.svg" alt="Logo that shows the brand name" class="brand-logo" />
@@ -19,5 +19,58 @@
         <button class="navigation-button"><img class="shopping-basket-image" src="/assets/icons/basket.svg" alt="Shopping basket" /></button>
       </nav>
     </header>
+
+    <form class="form">
+      <div>
+        <h1 class="headline">Kontakt oss</h2>
+        <p>Har du spørsmål om våre bakervarer, ønsker spesialbestillinger, eller trenger hjelp med en bestilling?
+          Fyll ut skjemaet nedenfor, så hjelper vi deg så raskt som mulig! </p>
+      </div>
+      <div class="form-inputs">
+              <label for="name" id="name-label">
+                  Navn:
+                  <sup>*</sup>
+              </label>
+              <input type="text" name="name" id="name" class="name" />
+              <span for="form-error-message" class="error-message" id="name-error-message">
+                  Vennligst fyll inn ditt navn
+              </span>
+
+              <label for="email" id="email-label">
+                E-post:
+                <sup>*</sup>
+              </label>
+              <input type="email" name="email" id="email" class="email" />
+              <span for="form-error-message" class="error-message" id="email-error-message">
+                Vennligst fyll inn din e-postadresse
+              </span>
+
+              <label for="phone-number" id="phone-number-label">
+                  Telefonnummer:
+                  <sup>*</sup>
+              </label>
+              <input type="text" name="phone-number" id="phone-number" class="phone-number" />
+              <span for="form-error-message" class="error-message" id="phone-error-message">
+                  Vennligst fyll inn telefonnummeret ditt
+              </span>
+
+              <label for="comment" id="comment-label">Melding:</label>
+              <textarea
+                  name="comment-input"
+                  id="comment"
+                  class="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Maks 500 tegn"
+              ></textarea>
+              <div class="comment-error-container">
+                  <span id="character-count">Antall tegn: 0</span>
+                  <span for="comment" class="error-message" id="comment-error-message">For mange tegn</span>
+              </div>
+          </div>
+      </div>
+
+      <button type="submit" class="primary-button">Send skjema</button>
+  </form>
   </body>
 </html>
