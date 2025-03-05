@@ -1,6 +1,8 @@
-window.addEventListener("DOMContentLoaded", () => {
-  // Dynamisk rendering
-  console.log("Hei!");
-});
+import renderList from "../components/productsComponents";
+import productList from "../database/products";
 
-// Event listeners
+const listElement = document.querySelector("list");
+
+window.addEventListener("DOMContentLoaded", () => {
+  renderList(productList, listElement);
+});
