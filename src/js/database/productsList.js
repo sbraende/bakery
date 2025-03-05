@@ -161,15 +161,6 @@ const productList = [
     isWarm: true,
   },
   {
-    title: "Svart kaffe",
-    productType: "Drikke",
-    price: "66kr",
-    allergies: [],
-    ingredients: "Kaffe",
-    imagePath: "/assets/images/products/svartkaffe.jpg",
-    isWarm: true,
-  },
-  {
     title: "Café au Lait",
     productType: "Drikke",
     price: "70kr",
