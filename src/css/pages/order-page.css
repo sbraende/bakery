@@ -33,7 +33,6 @@
 
 .product__stepper-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .product__button {
