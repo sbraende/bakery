@@ -3,6 +3,13 @@ const commentInput = document.querySelector(".comment");
 const commentError = document.getElementById("comment-error-message");
 const counter = document.getElementById("character-count");
 
+// DB
+import app from "../../js/database/firebaseConfig";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
+const firestore = getFirestore(app);
+const feedbackCollection = collection(firestore, "feedback");
+
+// Event listener
 window.addEventListener("DOMContentLoaded", () => {
   // FORM VALIDATION FOR DOG SIGN UP FORM
   form.addEventListener("submit", (e) => {
@@ -49,6 +56,21 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // DB broken
+  // // INPUT IMPORTS
+  // const name = document.getElementById("name").value.trim();
+  // const phoneNumber = document.getElementById("phone-number").value.trim();
+  // const email = document.getElementById("email").value.trim();
+
+  // const feedback = {
+  //   name,
+  //   phoneNumber,
+  //   email,
+  //   message: document.querySelector(".comment-input").value,
+  // };
+
+  // addDoc(feedbackCollection, feedback);
+
   const validateCommentInput = () => {
     commentInput.addEventListener("input", () => {
       const characterCount = commentInput.value.length;
@@ -66,5 +88,3 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   validateCommentInput();
 });
-
-// Event listeners
